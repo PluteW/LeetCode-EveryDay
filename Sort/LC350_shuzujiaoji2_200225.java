@@ -13,6 +13,11 @@ public class LC350_shuzujiaoji2_200225 {
         }
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
     public int[] solution(){
         int[] nums1 = {1,2,1};
         int[] nums2 = {1,1};
@@ -49,6 +54,8 @@ public class LC350_shuzujiaoji2_200225 {
      *      方法 2 ：
      *      借助 hashMap的计数进行操作
      * */
+
+
     public int[] intersect(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
             return intersect(nums2, nums1);
