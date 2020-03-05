@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ShuZu;
 
 import java.util.Iterator;
 import java.util.LinkedList;

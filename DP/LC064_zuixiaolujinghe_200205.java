@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.DP;
 
 public class LC064_zuixiaolujinghe_200205 {
 
