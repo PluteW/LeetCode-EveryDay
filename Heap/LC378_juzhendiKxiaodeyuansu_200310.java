@@ -4,6 +4,13 @@ public class LC378_juzhendiKxiaodeyuansu_200310 {
     public static void main(String[] args) {
 
     }
+    /**
+     * @Description： 二分法 + 计数
+     * @Params:     int[][] matrix  数组数据    int k 需要返回的第 k 个数字
+     * @return:     int right  最后返回的结果
+     * @author: Mr.Wang
+     * @create: 23:02
+    */
     public int solution(){
         int[][] matrix = {
                 {1,5,9},
