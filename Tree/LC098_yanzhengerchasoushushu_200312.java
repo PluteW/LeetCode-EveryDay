@@ -7,7 +7,7 @@ public class LC098_yanzhengerchasoushushu_200312 {
 
     public static void main(String[] args) {
         LC098_yanzhengerchasoushushu_200312 Solution = new LC098_yanzhengerchasoushushu_200312();
-        boolean ret = Solution.isValidBST();
+        boolean ret = Solution.isValidBST(null);
         System.out.println(ret);
     }
 
