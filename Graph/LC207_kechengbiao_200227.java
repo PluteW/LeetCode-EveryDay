@@ -8,6 +8,7 @@ public class LC207_kechengbiao_200227 {
     }
     /**
      * @Description：    广度优先算法      拓扑排序
+     *          要点： 入度为0即可安排
      * @Params:         课程数目 numCourses     依附关系    prerequisites
      * @return:         是否可以实现
      * @author: Mr.Wang
@@ -32,6 +33,7 @@ public class LC207_kechengbiao_200227 {
     }
     /**
      * @Description：    深度优先算法      拓扑排序
+     *          要点： 判断是否有环
      * @Params:         课程数目 numCourses     依附关系    prerequisites
      * @return:         是否可以实现
      * @author: Mr.Wang

@@ -39,6 +39,7 @@ public class LC279_wanquanpingfangshu_2002215 {
     /**
      *  采广度优先的策略
      *  不管你是不是一个平方和，都从最小的平方和开始减去，然后压进队列
+     *  考虑树的结构进行结合
      *  BFS三大要素：
      *      队列：先入先出的容器；
      *      出入队的节点；
@@ -55,10 +56,8 @@ public class LC279_wanquanpingfangshu_2002215 {
         while(!queue.isEmpty()){
             level++;
             int len=queue.size();
-
             for(int i=0;i<len;i++){
                 int cur=queue.poll();
-
                 for(int j=1;j*j<=cur;j++){
                     int tmp=cur-j*j;
                     if(tmp==0)

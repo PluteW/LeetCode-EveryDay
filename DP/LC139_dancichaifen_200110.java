@@ -18,12 +18,11 @@ public class LC139_dancichaifen_200110 {
 //  方法 1 ： 动态规划法
     public boolean solution() {
         String[] wordDict = { "cats", "dog", "sand", "and", "cat"};
+        String s = "catsandog";
         Set<String> wordDictSet=new HashSet();
         for (int i = 0;i < wordDict.length;i++) {
             wordDictSet.add(wordDict[i]);
         }
-        String s = "catsandog";
-
         boolean[] ret = new boolean[s.length()+1];
         ret[0] = true;
         for (int i = 1;i<ret.length;i++){
@@ -72,5 +71,4 @@ public class LC139_dancichaifen_200110 {
         }
         return false;
     }
-
 }

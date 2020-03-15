@@ -34,7 +34,7 @@ public class LC120_sanjiaoxingzuixiaolujing_200208 {
         return ret;
     }
 
-//    方法 2： 从下到上，使用一位数组，扩展空间一定
+//    方法 2： 从下到上，使用一维数组，扩展空间一定
     public int solution2(){
         List<List> triangle = new ArrayList<>();
 

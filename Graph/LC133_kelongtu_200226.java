@@ -10,8 +10,6 @@ public class LC133_kelongtu_200226 {
     public static void main(String[] args) {
         LC133_kelongtu_200226 Solution = new LC133_kelongtu_200226();
     }
-
-    private HashMap<Node,Node> visited = new HashMap<>();
     /**
      * @Description： 方法一 ：深度优先算法
      * @Params: 需要被复制的节点 Node
@@ -19,6 +17,7 @@ public class LC133_kelongtu_200226 {
      * @author: Mr.Wang
      * @create: 22:30
     */
+    private HashMap<Node,Node> visited = new HashMap<>();
     public Node cloneGraph(Node n){
         if (n == null){
             return n;
