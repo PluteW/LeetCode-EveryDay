@@ -1,6 +1,7 @@
 package LeetCode.Arithmetic.DFS;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LC105_congqianxuzhongxugouzaoerchashu_200316 {
 
@@ -8,7 +9,7 @@ public class LC105_congqianxuzhongxugouzaoerchashu_200316 {
     int[] preorder;
     int[] inorder;
     int preIndex = 0;
-    HashMap<Integer,Integer> map = new HashMap<>();
+    Map<Integer,Integer> map = new HashMap<>();
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || inorder == null || preorder.length != inorder.length)
@@ -22,8 +23,13 @@ public class LC105_congqianxuzhongxugouzaoerchashu_200316 {
     }
     public TreeNode dfs(int start,int end){
         if (start>end) return null;
-
-        TreeNode node = preorder
+        int val = preorder[preIndex];
+        TreeNode node = new TreeNode(val);
+        int index = map.get(val);
+        preIndex++;
+        node.left = dfs(start,index-1);
+        node.right = dfs(index+1,end);
+        return node;
     }
 
     class TreeNode {
