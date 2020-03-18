@@ -27,8 +27,9 @@ public class LC105_congqianxuzhongxugouzaoerchashu_200316 {
         TreeNode node = new TreeNode(val);
         int index = map.get(val);
         preIndex++;
+        node.right = dfs(index+1,end);      // 这里先找右子树，再找左子树
         node.left = dfs(start,index-1);
-        node.right = dfs(index+1,end);
+
         return node;
     }
 
