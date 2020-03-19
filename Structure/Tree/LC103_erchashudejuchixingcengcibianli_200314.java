@@ -12,38 +12,6 @@ public class LC103_erchashudejuchixingcengcibianli_200314 {
         List<List<Integer>> ret = Solution.zigzagLevelOrder(root);
         System.out.println(ret);
     }
-//    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-//        LinkedList<TreeNode> queue = new LinkedList<>();
-//        LinkedList<List<Integer>> ret = new LinkedList<>();
-//        queue.add(root);
-//        boolean b = true;
-//        while (!queue.isEmpty()){
-//            LinkedList<TreeNode> q = new LinkedList<>();
-//            List<Integer> temp = new LinkedList<>();
-//            while (!queue.isEmpty()){
-//                if (b){
-//                    TreeNode t = queue.pollFirst();
-//                    if (t != null){
-//                        temp.add(t.val);
-//                            q.addLast(t.left);
-//                            q.addLast(t.right);
-//                        }
-//                    }else {
-//                        TreeNode t = queue.pollLast();
-//                        if (t != null){
-//                            temp.add(t.val);
-//                            q.addLast(t.left);
-//                            q.addLast(t.right);
-//                        }
-//                    }
-//                }
-//            b = !b;
-//            if (!temp.isEmpty())
-//                ret.add(temp);
-//            queue = q;
-//        }
-//        return ret;
-//    }
 
 
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
