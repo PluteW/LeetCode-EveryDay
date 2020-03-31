@@ -41,7 +41,9 @@ public class LC206_fanzhuanlianbiao_200302 {
      * @create: 22:37
     */
     public ListNode solution2(ListNode head){
-        if (head == null || head.next == head) return head;
+        if (head == null || head.next == head) {
+            return head;
+        }
         ListNode pre = solution2(head.next);
         head.next.next = head;
         head.next = null;
