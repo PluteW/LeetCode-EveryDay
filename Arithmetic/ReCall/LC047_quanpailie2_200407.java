@@ -1,4 +1,4 @@
-package LeetCode._PunchTheClock;
+package LeetCode.Arithmetic.ReCall;
 
 import java.util.*;
 
